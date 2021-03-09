@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Script to prune the current repository
+
+borg prune -v --list --keep-daily=7 --keep-weekly=4 /mnt/backup/x230
