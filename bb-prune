@@ -2,4 +2,12 @@
 
 # Script to prune the current repository
 
+sudo mount.cifs //192.168.0.213/backup_x230 /mnt/backup -o credentials=/root/nas-exlumine.crd,uid=1000
+
 borg prune -v --list --keep-daily=7 --keep-weekly=4 /mnt/backup/x230
+
+sync
+
+sudo umount -v /mnt/backup
+
+# EOF
