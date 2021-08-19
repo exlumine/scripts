@@ -1,1 +1,1 @@
-sudo fbset -a --geometry 1920 1080 1920 1080 32 && setfont /usr/share/kbd/consolefonts/Lat2-Terminus16.psfu.gz
+sudo fbset -a --geometry 1920 1080 1920 1080 32
