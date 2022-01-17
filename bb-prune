@@ -9,5 +9,3 @@ borg prune -v --list --keep-daily=7 --keep-weekly=4 /mnt/backup/x230
 sync
 
 sudo umount -v /mnt/backup
-
-# EOF

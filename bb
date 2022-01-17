@@ -17,7 +17,6 @@ borg create -s /mnt/backup/x230::x230-exlumine-{now:%Y-%m-%d_%H:%M:%S} ~/ \
 	--exclude '~/books/NAS/' \
 	--exclude '~/picture/NAS/' \
 	--exclude '~/video/NAS/'
-#	--exclude ''
 
 sync
 
