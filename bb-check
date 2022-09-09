@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Borg backup verification script
+# Mount destination, performe backup verification, and unmount destination again
+
+sudo mount.cifs //192.168.0.213/backup_x230 /mnt/backup -o credentials=/root/nas-exlumine.crd,uid=1000
+
+borg check --verify-data /mnt/backup/x230
+
+sudo umount -v /mnt/backup
+
+notify-send "borg" "Verification done."
